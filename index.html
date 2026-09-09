@@ -63,7 +63,107 @@
         </p>
       </section>
     </header>
-    <main class="content" id="reservarunamesa"></main>
-    <footer class="footer" id="contactos"></footer>
+    <main>
+      <section class="reservation" id="reservarunamesa">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+
+        <form class="reservation__form">
+          <fieldset class="reservation__fieldset">
+            <label class="reservation__label" for="nombre">Nombre *</label>
+            <input
+              class="reservation__input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+
+            <label class="reservation__label" for="comensales">
+              Número de comensales *
+            </label>
+            <input
+              class="reservation__input"
+              type="number"
+              id="comensales"
+              name="comensales"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
+
+            <label class="reservation__label" for="fecha">
+              Fecha y hora *
+            </label>
+            <input
+              class="reservation__input"
+              type="datetime-local"
+              id="fecha"
+              name="fecha"
+              required
+            />
+
+            <label class="reservation__label" for="email">
+              Tu correo electrónico *
+            </label>
+            <input
+              class="reservation__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+
+            <button class="reservation__button" type="submit">
+              Reservar una mesa
+            </button>
+
+            <label class="reservation__checkbox-label" for="aceptar">
+              <input
+                class="reservation__checkbox-input"
+                type="checkbox"
+                id="aceptar"
+                name="aceptar"
+                required
+              />
+              Acepto los términos de uso
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer" id="contactos">
+      <div class="footer__circle"></div>
+
+      <img
+        class="footer__logo"
+        src="./images/logo_coffeeshop_light.svg"
+        alt="Logo Cafetería Triple Espresso"
+      />
+      <div class="footer__container">
+        <h3 class="footer__container-title">Redes sociales</h3>
+        <ul class="footer__container-list">
+          <li class="footer__container-item">
+            <img
+              class="footer__container-icon"
+              src="./images/facebook_white.svg"
+              alt="Icono de Facebook"
+            />
+            <a class="footer__container-link" href="#facebook"> Facebook </a>
+          </li>
+          <li class="footer__container-item">
+            <img
+              class="footer__redes-icon"
+              src="./images/instagram_white.svg"
+              alt="Icono de Instagram"
+            />
+            <a class="footer__container-link" href="#instagram"> Instagram </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__container-credits">© 2026 Johan Torres</div>
+    </footer>
   </body>
 </html>
